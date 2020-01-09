@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Стоимость обучения с преимуществами</title>
+</head>
+<body>
+
+  <h1 class="header">Стоимость обучения</h1>
+
+  <div class="wrapper">
+
+    <div class="left-container">
+      <div class="discount-block">
+        <div class="discount-block__discount">Скидка</div>
+        <div class="discount-block__percent">40%</div>
+        <div class="discount-block__first-students">первым 20</div>
+      </div>
+      <div class="price">
+        <div class="price__fullprice-name">Полная стоимость курса</div>
+        <div class="price__fullprice-amount">50 000 &#8381</div>
+        <div class="price__installment-amount">2 900 &#8381</div>
+        <div class="price__installment-name">Рассрочка без первого взноса</div>
+        <div class="price__fullinstallment-amount">29 000 &#8381</div>
+        <div class="price__fullinstallment-name">Для первых 20-ти</div>
+      </div>
+    </div>
+
+    <div class="right-container">
+      <div class="enrollment">
+        <h2 class="enrollment__header">Запишитесь на курс</h2>
+        <ul class="phone-list">
+          <li class="phone-list__item">Телефон</li>
+          <li class="phone-list__item">Телефон</li>
+          <li class="phone-list__item">Телефон</li>
+          <li class="phone-list__item">Телефон</li>
+        </ul>
+        
+        <div class="course-data">
+          <div class="course-start">
+            Старт курса: <span class="course-data__number">7 сентября</span>
+          </div>
+          <div class="places-left">
+            Осталось: <span class="course-data__number">19 мест</span>
+          </div>
+        </div>
+        <form class="enroll-form" action="#" method="POST">
+          <input type="text" class="enroll-form__input" id="name" placeholder="Имя">
+            <div class="enroll-form__validation" id="name-validator">Имя должно состоять только из букв</div>
+          <input type="text" class="enroll-form__input" id="phone" placeholder="Телефон">
+            <div class="enroll-form__validation" id="phone-validator">Пожалуйста, введите ваш телефон</div>
+          <input type="text" class="enroll-form__input" id="email" placeholder="Email">
+            <div class="enroll-form__validation" id="email-validator">Пожалуйста, введите ваш email</div>
+          <input type="button" class="enroll-form__button" value="Записаться">
+          <div class="checkbox-wrapper">
+            <input type="checkbox" class="enroll-form__checkbox" id="personal">
+            <label for="personal" class="enroll-form__label">Я согласен с условиями обработки <a href="#" class="enroll-form__personal">персональных данных</a></label>
+           </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  
+  <script src="js/validation.js"></script>
+</body>
+</html>

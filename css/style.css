@@ -1,0 +1,396 @@
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('./fonts/Roboto-Regular.ttf');
+}
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('./fonts/Roboto-Bold.ttf');
+}
+@font-face {
+  font-family: 'RobotoSlab-Regular';
+  src: url('./fonts/RobotoSlab-Regular.ttf');
+}
+@font-face {
+  font-family: 'RobotoSlab-Light';
+  src: url('./fonts/RobotoSlab-Light.ttf');
+}
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url('./fonts/OpenSans-Regular.ttf');
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: #F6F7FD;
+  color: #000000;
+  font-family: 'Roboto-Regular', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  text-align: center;
+  margin: 65px 0 67px;
+  font-size: 55px;
+  letter-spacing: -0.5px;
+}
+
+.wrapper {
+  max-width: 1170px;
+  height: 807px;
+  margin: 0 auto 90px;
+  display: flex;
+}
+
+.left-container {
+  background: #3D3BFF;
+  width: 50%;
+}
+
+.right-container {
+  width: 50%;
+  background: #FAFBFE;
+  box-shadow: 0px 2px 24px rgba(168, 175, 196, 0.3);
+}
+
+.discount-block {
+  width: 110px;
+  height: 100px;
+  background: #000;
+  position: relative;
+  top: -20px;
+  left: 238px;
+  color: #FFF;
+}
+
+.discount-block:before {
+  content: "";
+  position: absolute;
+  top: 100px;
+  border-top: 19px solid #000;
+  border-right: 55px solid transparent;
+  border-left: 55px solid transparent;
+  width: 0;
+  height: 0;
+}
+
+.discount-block__discount {
+  padding-top: 21px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.discount-block__percent {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.discount-block__first-students {
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.price {
+  text-align: center;
+  color: #fff;
+  margin-top: 140px;
+}
+
+.price__fullprice-name {
+  font-size: 15px;
+  opacity: 0.5
+}
+
+.price__fullprice-amount {
+  font-family: 'RobotoSlab-Light', sans-serif;
+  font-size: 38px;
+  opacity: 0.4;
+  text-decoration: line-through;
+}
+
+.price__installment-amount {
+  margin-top: 5px;
+  font-family: 'RobotoSlab', sans-serif;
+  font-size: 80px;
+  letter-spacing: -2px;
+}
+
+.price__installment-name {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.price__fullinstallment-amount {
+  font-family: 'RobotoSlab', sans-serif;
+  margin-top: 32px;
+  font-size: 50px;
+}
+
+.price__fullinstallment-name {
+  font-size: 20px;
+}
+
+.enrollment {
+  margin-top: 57px;
+  margin-left: 85px;
+}
+
+.enrollment__header {
+  font-size: 34px;
+  font-family: 'Roboto-Bold', sans-serif;
+}
+
+.phone-list {
+  padding: 0;
+}
+
+.phone-list__item {
+  color: #657195;
+  list-style: none;
+  font-size: 15px;
+  line-height: 28px;
+}
+
+.phone-list__item:before {
+  content: '\2022';
+  color: #3D3BFF;
+  font-size: 20px;
+  margin-right: 16px;
+  vertical-align: middle;
+}
+
+.course-data {
+  margin-top: 44px;
+  display: flex;
+  font-size: 15px;
+}
+
+.course-data__number {
+  color: #3D3BFF;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.places-left {
+  margin-left: 34px;
+}
+
+.enroll-form {
+  margin-top: 27px;
+}
+
+.enroll-form__input {
+  font-family: 'OpenSans-Regular';
+  font-size: 15px;
+  line-height: 28px;
+  display: block;
+  width: 347.92px;
+  height: 59.94px;
+  margin-top: 20px;
+  padding-left: 20px;
+  border: 2px solid #E6E8F0;
+}
+
+.enroll-form__validation {
+  display: none;
+}
+
+.enroll-form_invalid {
+  display: block;
+  color: rgb(15, 11, 252);
+  padding-left: 20px;
+  padding-top: 3px;
+  font-size: 14px;
+}
+
+.enroll-form__button {
+  font-family: 'OpenSans-Regular';
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 20px;
+  display: block;
+  width: 371.92px;
+  height: 69.93px;
+  margin-bottom: 33px;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #fff;
+  background: #3D3BFF;
+  border: none;
+}
+
+.enroll-form__button:hover {
+  cursor: pointer;
+  background: rgb(75, 72, 250);
+  transition: 0.5s;
+}
+
+.checkbox-wrapper {
+  display: flex;
+}
+
+.enroll-form__checkbox {
+  -webkit-appearance: none;
+  border: 1px solid rgb(196, 204, 240);
+  width: 23.99px;
+  height: 23.98px;
+  position: relative;
+}
+
+.enroll-form__checkbox:checked:after {
+  content: '\2714';
+  color: #fff;
+  background: #3D3BFF;
+  font-size: 18px;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 23.99px;
+  text-align: center;
+}
+
+.enroll-form__label {
+  margin-left: 21px;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.enroll-form__personal {
+  display: block;
+  color: #3D3BFF;
+}
+
+
+/* Media */
+
+@media screen and (max-height: 880px) {
+  .wrapper {
+    height: 700px;
+  }
+
+  .phone-list {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .header {
+    font-size: 45px;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .left-container {
+    width: 100%;
+    padding-bottom: 73px;
+  }
+  
+  .right-container {
+    width: 100%;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+  }
+
+  .discount-block {
+    left: 45%;
+  }
+
+  .price {
+    margin-top: 34px;
+  }
+  
+  .enrollment {
+    margin-top: 69px;
+    margin-left: 122px;
+  }
+
+  .enrollment__header {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 950px) and (max-height: 770px) {
+  .phone-list {
+    display: none;
+  }  
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    margin: 56px 0 56px;
+  }
+
+  .wrapper {
+    padding: 0;
+  }
+
+  .header {
+    font-size: 38px;
+  }
+
+  .discount-block {
+    left: 35%;
+  }
+
+  .price__fullprice-amount {
+    font-size: 36px;
+  }
+  
+  .price__installment-amount {
+    font-size: 56px;
+  }
+  
+  .price__installment-name {
+    font-size: 18px;
+  }
+  
+  .price__fullinstallment-amount {
+    font-size: 40px;
+  }
+  
+  .price__fullinstallment-name {
+    font-size: 15px;
+  }
+
+  .enrollment {
+    margin-left: 25px;
+  }
+
+  .enrollment__header {
+    margin-left: 0;
+  }
+
+  .course-data {
+    flex-direction: column;
+  }
+
+  .places-left {
+    margin-left: 0;
+    margin-top: 9px;
+  }
+
+  .enroll-form__input {
+    width: 268px;
+  }
+
+  .enroll-form__button {
+    width: 290px;
+  }
+
+}
